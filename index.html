@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cce0e69885.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="_bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="_css/style.css">
+    
+</head>
+<body>
+    <script src="_bootstrap/bootstrap.bundle.min.js"></script>
+
+<!-- NAVBAR FEITA COM BOOTSTRAP-->
+
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed col-12" style="z-index: 99; box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);">
+        <div class="container-fluid">
+          <a class="navbar-brand align-items-center justify-content-start col-4 " href="#" id="linklogo">SeuPetshop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center justify-content-center col-4 " id="navbarNavDropdown">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#titulo_sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#titulo_contato">Contato</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Rações</a></li>
+                  <li><a class="dropdown-item" href="#">Acessórios</a></li>
+                  <li><a class="dropdown-item" href="#">Higiêne</a></li>
+                  </ul>
+              </li>
+              </ul>
+          </div>
+          <div id="contatologo" class="align-items-end justify-content-end col-4"> 
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+    </nav>
+</br>
+</br>
+<!-- CAROUSEL DO BOOTSTRAP-->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="_img/corousel-1.jpg" class="d-block w-100" alt="..." id="corousel_img-1">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>A melhor ração para o seu bichinho!</h2>
+          <p>Você sabia que a ração do seu bichino está ligada com a expectativa de vida do seu amiguinho? Uma ração de baixa qualidade pode reduzir a expectativa de vida seu bichino. Nós temos a melhor ração do mundo, obtida através de vários estudos.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="_img/corousel-2.jpg" class="d-block w-100" alt="..." id="corousel_img-2">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Os melhores acessórios para o seu bichinho!</h2>
+          <p>Aqui você encontra roupas, brinquedos, acessórios e muito mais para deixar o seu pet por dentro de todas as novidades da moda animal.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="_img/corousel-3.jpg" class="d-block w-100" alt="..." id="corousel_img-3">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Mantenha a higiêne do seu bichinho em dia!</h2>
+          <p>Nós oferecemos uma série de produtos e equipamentos para você manter a saúde do seu pet sempre em dia. Remédios, vacinas e muito mais.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- CARDS BOOTSTRAP-->
+
+<div class="container mt-2">
+  <div class="row justify-content-center">
+    <div class="card col-4" style="width: 22rem;">
+      <img src="_img/corousel-1.jpg" class="card-img-top mt-1" alt="...">
+      <div class="card-body">
+        <h5>A melhor ração para o seu bichinho!</h5>
+        <p class="card-text">Aqui você encontra as melhores rações. A ração que o seu bichinho consome está intimamente conectada com a expectativa de vida dele.</p>
+
+        <!-- MODAL BOTÃO SAIBA MAIS-->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          Saiba mais
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">A melhor ração para o seu bichinho!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="_img/modal-1.jpg" alt="" style="width: 100%;">
+                <p class="card-text">Aqui você encontra as melhores rações. A ração que o seu bichinho consome está intimamente conectada com a expectativa de vida dele.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FIM BOTÃO SAIBA MAIS-->
+
+      </div>
+    </div>
+    <div class="card col-4" style="width: 22rem;">
+      <img src="_img/corousel-2.jpg" class="card-img-top mt-1" alt="...">
+      <div class="card-body">
+        <h5>Os melhores acessórios para o seu bichinho!</h5>
+        <p class="card-text">Aqui você encontra roupas, brinquedos, acessórios e muito mais para deixar o seu pet por dentro de todas as novidades da moda animal.</p>
+
+        <!-- MODAL BOTÃO SAIBA MAIS-->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          Saiba mais
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Os melhores acessórios para o seu bichinho!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="_img/modal-2.jpg" alt="" style="width: 100%;">
+                <p class="card-text">Aqui você encontra roupas, brinquedos, acessórios e muito mais para deixar o seu pet por dentro de todas as novidades da moda animal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FIM BOTÃO SAIBA MAIS-->
+
+      </div>
+    </div>
+    <div class="card col-4" style="width: 22rem;">
+      <img src="_img/corousel-3.jpg" class="card-img-top mt-1" alt="...">
+      <div class="card-body">
+        <h5>Mantenha a higiêne do seu bichinho em dia!</h5>
+        <p class="card-text">Nós oferecemos uma série de produtos e equipamentos para você manter a saúde do seu pet sempre em dia. Remédios, vacinas e muito mais.</p>
+
+        <!-- MODAL BOTÃO SAIBA MAIS-->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+          Saiba mais
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Mantenha a higiêne do seu bichinho em dia!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./_img/modal-3.jpg" alt="" style="width: 100%;">
+                <p class="card-text">Nós oferecemos uma série de produtos e equipamentos para você manter a saúde do seu pet sempre em dia. Remédios, vacinas e muito mais.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--FIM BOTÃO SAIBA MAIS-->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ÍNICIO SOBRE -->
+<hr>
+<article id="sobre">
+  <h3 id="titulo_sobre">Sobre</h3>
+  <p>Somos um grupo multidisciplinar, e que no entanto tem uma paixão em comum: trabalhar com pets! Desde quando nossos 
+    clientes de patas entram pela porta, adoramos interagir com eles e conhecê-los profundamente – o que nos dá a 
+    oportunidade de oferecer soluções certeiras para que todos tenham uma vida mais feliz. Somos, também, apaixonados por 
+    um atendimento carinhoso e atencioso de nossos clientes humanos, que passam a fazer parte da família It Pet.</p>
+  <img src="_img/sobre.jpg">
+</article>
+<!-- CONTATO-->
+<article id="contato" class="bg-primary">
+  <h3 id="titulo_contato">Contato</h3>
+  <p>Entre em contato conosco através das nossas mídias sociais</p>
+  <section id="links">
+    <a href=""><i class="fab fa-facebook"></i></a>
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href=""><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:gbrielsvasconcelos@gmail.com?subject=Contato Site"link HTML""><i class="fas fa-envelope-square"></i></a>
+  </section>
+</article>
+<!-- NEWSLETTLER-->
+<article id="newsletter" class="bg-light">
+  <h3>Newsletter</h3>
+  <p>Assine o nosso Newsletter e fique por dentro de todas as novidades do nosso Petshop</p>
+  <section id="formulario">
+    <form>
+      <input type="email" placeholder="Coloque o seu e-mail aqui">
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+</article>
+<footer class="bg-primary">
+  <p>Site desenvolvido por <a href="https://www.linkedin.com/in/gabrielsvasconcelos/" target="_blank">Gabriel Vasconcelos</a></p>
+  <hr>
+  <a href="#carouselExampleDark"><i class="fas fa-arrow-up" ></i></a>
+  <p>Todos os direitos reservados &#169; - 2021</p>
+</footer>
+</body>
+</html>
